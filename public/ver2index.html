@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>| Scrape | </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            color: blue;
+        }
+        .bannertext {
+            font-size: 5rem;
+        }
+        
+        .bg-banner {
+            background-color: #fc4c0d;
+             background-image: linear-gradient(315deg, #0687f2 0%, #eb11e0 74%); 
+        }
+        
+        .bg-banner2 {
+            background-color: #03233e;
+            background-image: linear-gradient(315deg, #0687f2 0%, #eb11e0 74%); 
+        }
+        
+        
+        .form-group {
+            font-weight: bolder;
+        }
+        
+        .container {
+            background-color: rgba(61, 238, 12, 0.906);
+        }
+        
+        button#submitBtn:hover {
+            background-color: #10dbff;
+            background-image: linear-gradient(315deg, #151616 0%, #423d3d 74%);
+            -webkit-background-clip: border-box;
+            background-clip: border-box;
+            color: rgb(20, 215, 20);
+            font-weight: bolder;
+            /* font-family: 'Faster One', cursive;
+            text-shadow: 2px 2px 4px #000000; */
+        }
+    </style>
+</head>
+
+<body class="bg-none" style="background: url('https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png');">
+
+    <div class="container">
+        <div class="bg-banner text-center col-md-12 mb-2">
+            <span class="mb-0 bannertext ">Scrape</span>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-lg btn-block btn-dark">Scrape It!</button>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-lg btn-block btn-light">View Notes</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-8" id="articles"> </div>
+            <div class="col-md-4" id="notes"> </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
