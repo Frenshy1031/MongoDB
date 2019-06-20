@@ -50,7 +50,7 @@ app.get("/scrape", (req, res) => {
         });
 
         // Send a message to the client
-        res.send("Scrape Complete");
+        // res.send("Scrape Complete");
         res.redirect('/');
     });
 });

@@ -37,7 +37,12 @@ app.use(router);
 
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
+if (process.env.MONGODB_URI){
+    mongoose.connect(process.env.MONGODB_URI)
+}else{
+    mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
+
+}
 
 // Start the server
 app.listen(PORT, function() {
